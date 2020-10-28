@@ -78,6 +78,7 @@ a {
 
 .input {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .input label {
@@ -91,4 +92,13 @@ a {
   border-bottom: 1px solid var(--border-color);
   width: 100%;
   outline: none;
+}
+
+.input__indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary-color);
 }
