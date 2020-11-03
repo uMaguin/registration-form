@@ -20,7 +20,12 @@ body {
 
   height: 100vh;
 
-  background-image: url("../images/fall.jpeg");
+  background-size: cover;
+}
+
+.background-overlay {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 p {
@@ -48,6 +53,9 @@ a {
 
 .logo-container {
   grid-column: 1/5;
+
+  display: flex;
+  justify-content: center;
 }
 
 .panel-container {
