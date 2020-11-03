@@ -143,7 +143,7 @@ a {
 .date-of-birth__inputs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  display: 12px;
+  gap: 12px;
 }
 
 .consents {
@@ -152,4 +152,33 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 10px 24px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 660px) {
+  .logo-container {
+    display: none;
+  }
+  .panel-container {
+    grid-column: 1 / span 12;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #container {
+    padding: 0;
+  }
+  .panel {
+    height: 100vh;
+    border-radius: 0;
+  }
 }
