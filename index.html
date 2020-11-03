@@ -8,7 +8,7 @@
 
     <link
       rel="shortcut icon"
-      href="./images/behold-logo-small.png"
+      href="./img/behold-logo-small.png"
       type="image/x-icon"
     />
   </head>
@@ -16,7 +16,7 @@
     <div class="background-overlay">
       <div id="container">
         <div class="logo-container">
-          <img src="./images/behold-logo.png" alt="Behold" />
+          <img src="./img/behold-logo.png" alt="Behold" />
         </div>
 
         <div class="panel-container">
@@ -107,15 +107,6 @@
       </div>
     </div>
 
-    <script>
-      var images = ["fall.jpeg", "leaf.jpeg", "flowePlant.jpeg"];
-      function changeBackground() {
-        var randomNumber = Math.floor(Math.random() * images.length);
-        document.body.style.backgroundImage =
-          "url(../img" + images[randomNumber] + ")";
-      }
-
-      window.onload = changeBackground;
-    </script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
